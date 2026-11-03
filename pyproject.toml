@@ -1,0 +1,32 @@
+[project]
+name = "intromachinelearning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "FrederikWSL", email = "glock.linstow@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "keras>=3.15.1",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyqt5>=5.15.11",
+    "scikit-learn>=1.9.0",
+    "tensorflow>=2.21.0",
+    "torch>=2.13.0",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+intromachinelearning = "intromachinelearning:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel<7",
+]
